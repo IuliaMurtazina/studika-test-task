@@ -1,0 +1,45 @@
+.header-mobile {
+  display: none;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.burger-menu {
+  height: 3.2rem;
+  width: 3.2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.burger {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &,
+  &::before,
+  &::after {
+    background: $text-color;
+    display: block;
+    height: .2rem;
+    width: 2rem;
+    position: absolute;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+  }
+
+  &::before {
+    top: -.5rem;
+  }
+
+  &::after {
+    top: .5rem;
+  }
+}

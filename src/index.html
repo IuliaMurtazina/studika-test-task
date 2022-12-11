@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header container">
+    <div class="header__content ">
+      <svg class="header__logo">
+        <use xlink:href="images/sprite.svg#logo"></use>
+      </svg>
+
+      <div class="location">
+        <div class="location__current">
+          <svg class="location__icon">
+            <use xlink:href="images/sprite.svg#city"></use>
+          </svg>
+          <p class="location__city">Любой регион</p>
+        </div>
+
+        <div class="region hidden">
+          <div class="region__search">
+            <input type="text" class="region__input" placeholder="Регион, город, населенный пункт">
+            <svg class="region__search-delete hidden">
+              <use xlink:href="images/sprite.svg#close"></use>
+            </svg>
+          </div>
+          <div class="region__container">
+            <div class="region__selected"></div>
+            <ul class="region__list">
+              <!-- <div class="spinner">
+                <div class="spinner__icon"></div>
+              </div> -->
+              <!-- <div class="region__error">
+                <p class="region__error-message">Не удалось загрузить список городов...</p>
+              </div> -->
+              <!-- <li class="region__item">
+                <p class="region__item-city">Москва</p>
+                <p class="region__item-area">Московская область</p>
+              </li> -->
+            </ul>
+          </div>
+          <button class="region__save">Сохранить</button>
+        </div>
+      </div>
+
+      <form action="#" class="search">
+        <input type="text" placeholder="Учебное заведение, специальность или профессия" class="search__input">
+        <button class="search__button">
+          <svg class="search__icon">
+            <use xlink:href="images/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+      <div class="likes">
+        <svg class="likes__icon">
+          <use xlink:href="images/sprite.svg#like"></use>
+        </svg>
+        <span class="likes__number">1</span>
+      </div>
+      <div class="profile">
+        <p class="profile__name">Екатерина</p>
+        <img src="./images/profile-photo.jpg" alt="Фото профиля" class="profile__photo">
+      </div>
+    </div>
+
+    <div class="header-mobile">
+      <div class="burger-menu"> <span class="burger"></span> </div>
+      <svg class="header__logo">
+        <use xlink:href="images/sprite.svg#logo"></use>
+      </svg>
+      <div class="likes">
+        <svg class="likes__icon">
+          <use xlink:href="images/sprite.svg#like"></use>
+        </svg>
+        <span class="likes__number">1</span>
+      </div>
+    </div>
+
+    <nav class="navigation container">
+      <div class="navigation__icon-background">
+        <svg class="navigation__icon">
+          <use xlink:href="images/sprite.svg#arrow-right"></use>
+        </svg>
+      </div>
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#" class="navigation__link">Вузы</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Колледжи</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Техникумы</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Училища</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Специальности</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Профессии</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Отзывы</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Учебным заведениям</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Тест на профориентацию</a></li>
+      </ul>
+    </nav>
+
+    <div class="overlay hidden"></div>
+    <nav class="nav-mobile">
+      <ul class="nav-mobile__list">
+        <li class="navigation__item"><a href="#" class="navigation__link">Вузы</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Колледжи</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Техникумы</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Училища</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Специальности</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Профессии</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Отзывы</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Учебным заведениям</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Тест на профориентацию</a></li>
+      </ul>
+      <svg class="nav-mobile__close">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </nav>
+  </header>
+
+  <main class="main">
+
+  </main>
+</body>
+
+</html>

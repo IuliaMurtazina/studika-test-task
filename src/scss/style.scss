@@ -1,0 +1,80 @@
+////////////////////////////////////////
+// Variables
+$text-color: #222222;
+$icons-color: #a7a7a7;
+$color-light-grey: #f1f1f1;
+
+$color-main-white: #fff;
+
+
+@mixin vert-center {
+  display: flex;
+  align-items: center;
+}
+
+////////////////////////////////////////
+// MEDIA QUERY MANAGER
+
+$bp-largest: 90em; //1440px
+$bp-large: 76em; //1216px
+$bp-large-2: 64em; //1024px
+$bp-medium: 60em; //960px
+$bp-medium-2: 53.75em; //860px
+$bp-small: 48em; //768px
+$bp-small-2: 41em; //656px
+$bp-small-3: 34em; //544px
+$bp-small-4: 27em; //432px
+$bp-smallest: 20em; //320px
+
+
+////////////////////////////////////////
+// Root
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $text-color;
+}
+
+.container {
+  width: 121.6rem;
+  margin: 0 auto;
+
+  @media only screen and (max-width: $bp-large) {
+    width: 100%;
+    padding: 0 3rem;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.display-none {
+  display: none;
+}
+
+.main {
+  height: 50rem;
+  background-color: $color-light-grey
+}
+
+////////////////////////////////////////
+// Import components
+
+@import "header.scss";
+@import "header-mobile.scss";
+@import "navigation.scss";
+@import "navigation-mobile.scss";
+@import "region.scss";
+@import "spinner.scss";

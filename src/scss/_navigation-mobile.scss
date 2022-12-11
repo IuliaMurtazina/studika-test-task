@@ -1,0 +1,41 @@
+
+.nav-mobile {
+  height: 100%;
+  background-color: $color-main-white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  // visibility: hidden;
+  transform: translateX(-100%);
+  transition: all .5s ease-in-out;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+    width: 30rem;
+    padding: 2rem;
+    z-index: 1;
+  }
+
+  &__close {
+    height: 1.6rem;
+    width: 1.6rem;
+    fill: $text-color;
+    position: absolute;
+    cursor: pointer;
+    top: 2%;
+    right: 5%;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($text-color, $alpha: .5);
+  transition: all .5s ease-in-out;
+}

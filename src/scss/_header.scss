@@ -1,0 +1,167 @@
+.header {
+  background-color: $color-main-white;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 2.4rem 0 1.6rem 0;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 1.8rem 5rem 2.2rem 5rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 1.8rem 2rem 2.2rem 2rem;
+  }
+
+  @media only screen and (max-width: $bp-small-4) {
+    padding: 1.8rem 1rem 2.2rem 1rem;
+  }
+
+  &__content {
+    width: 121.6rem;
+    margin: 0 auto;
+    @include vert-center;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 100%;
+      padding: 0 3rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    width: 8.8rem;
+    height: 2.4rem;
+    fill: $text-color;
+    margin-right: 1.6rem;
+    margin-top: -0.5rem;
+  }
+}
+
+.location {
+  position: relative;
+  cursor: pointer;
+
+  @media only screen and (max-width: $bp-large-2) {
+    margin-right: -3rem;
+  }
+
+  &__current {
+    @include vert-center;
+    gap: 0.8rem;
+    margin-right: 6rem;
+  }
+
+  &__icon {
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+
+  &__city {
+    font-size: 1.4rem;
+  }
+}
+
+.search {
+  margin-right: 18.4rem;
+  position: relative;
+  flex-grow: 1;
+
+  @media only screen and (max-width: $bp-large) {
+    margin-right: 6rem;
+  }
+
+  @media only screen and (max-width: $bp-large-2) {
+    margin-right: 4rem;
+  }
+
+  &__input {
+    border: 2px solid $color-light-grey;
+    outline: none;
+    // width: 59.2rem;
+    width: 100%;
+    background-color: $color-light-grey;
+    border-radius: 10rem;
+    padding: 1.3rem 0;
+    padding-left: 4rem;
+
+    &::placeholder {
+      font-size: 1.4rem;
+      text-align: center;
+    }
+
+    &:focus {
+      border: 2px solid #ABC8EA;
+      background-color: $color-main-white;
+    }
+
+    &:focus+.search__button {
+      background-color: $color-main-white;
+    }
+
+    @media only screen and (max-width: $bp-large-2) {
+      padding-left: 2rem;
+    }
+  }
+
+  &__button {
+    border: none;
+    background-color: $color-light-grey;
+    padding: .5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 22%;
+    left: 2%;
+  }
+
+  &__icon {
+    width: 1.7rem;
+    height: 1.7rem;
+    fill: $icons-color;
+  }
+}
+
+.likes {
+  @include vert-center;
+  gap: 0.8rem;
+  margin-right: 3rem;
+  padding: .5rem 1rem;
+  border-radius: 10rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background-color: $color-light-grey;
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.4rem;
+    fill: $icons-color;
+  }
+
+  &__number {
+    font-size: 1.4rem;
+  }
+}
+
+.profile {
+  @include vert-center;
+  gap: 0.8rem;
+
+  &__photo {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__name {
+    font-size: 1.4rem;
+  }
+}

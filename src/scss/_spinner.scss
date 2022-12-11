@@ -1,0 +1,26 @@
+.spinner {
+  padding: 1rem 0;
+
+  &__icon {
+    height: 3rem;
+    width: 3rem;
+    margin: 0 auto;
+    border-left: 3px solid #0656B4;
+    border-bottom: 3px solid #0656B4;
+    border-right: 3px solid #0656B4;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spinner .8s linear infinite;
+  }
+
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
