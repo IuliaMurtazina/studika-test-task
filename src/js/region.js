@@ -120,7 +120,7 @@ class Region {
           areaName,
           region.cities.map(
             (city) =>
-              `<p class="region__item-city" data-city-id="${city.id}" data-area2-id="${city.state_id}">${city.name}</p> <p class="region__item-area">${region.name}</p>`
+              `<p class="region__item-city" data-city-id="${city.id}">${city.name}</p> <p class="region__item-area">${region.name}</p>`
           ),
         ];
       }
